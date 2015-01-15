@@ -1,6 +1,6 @@
 # TweatMap.
 
-Live-updating Heat Maps of Twitter.
+Live-updating Heat Maps of Twitter. Built on Node.js with the help of Bootstrap, Socket.io, Express, Twitter, and Google Maps.
 
 ## Dependencies: 
 
