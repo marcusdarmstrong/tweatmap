@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TweatMap</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyAkxcuvoQLWUqnrLuq6NLvDf92g_W-9Nmw&libraries=visualization"></script>
+    
+  </head>
+  <body>
+    <div id="map"></div>
+    
+    <div id="controls" class="row">
+      <div class="col-xs-8 col-xs-offset-2">
+        <nav>
+          <ul id="trends" class="pager">
+          </ul>
+        </nav>
+        <form id="searchform">
+          <input id="search" class="form-control input-lg" type="text" placeholder="Enter search term..." autofocus>
+          <input type="submit">
+        </form>
+      </div>
+    </div>
+    
+    <div id="loading" class="row">
+      <div class="col-xs-12">
+        <h1 class="text-center"><span class="glyphicon glyphicon-refresh glyphicon-refresh-animate" aria-hidden="true"></span></h1>
+        <h2 class="text-center">Loading...</h2>
+      </div>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.2.1/socket.io.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
